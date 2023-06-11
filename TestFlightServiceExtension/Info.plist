@@ -5,7 +5,7 @@
 	<key>NSExtension</key>
 	<dict>
 		<key>ASDTestFlightServiceExtensionServiceTime</key>
-		<integer>180</integer>
+		<integer>-1</integer>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.appstored-services.testflight</string>
 		<key>NSExtensionPrincipalClass</key>
