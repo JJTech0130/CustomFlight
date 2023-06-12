@@ -12,8 +12,8 @@
 		4824860F2A32A7A900EAA985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4824860E2A32A7A900EAA985 /* ContentView.swift */; };
 		482486112A32A7AB00EAA985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482486102A32A7AB00EAA985 /* Assets.xcassets */; };
 		482486142A32A7AB00EAA985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482486132A32A7AB00EAA985 /* Preview Assets.xcassets */; };
+		487544892A369CAE00E4D7E4 /* TestFlightServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487544882A369CAE00E4D7E4 /* TestFlightServiceExtension.swift */; };
 		489FB36F2A34135F00347257 /* AppStoreDaemon.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 489FB36E2A34135F00347257 /* AppStoreDaemon.tbd */; };
-		48AD472B2A33EE6A00F73716 /* TestFlightServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD472A2A33EE6A00F73716 /* TestFlightServiceExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +47,10 @@
 		4824860E2A32A7A900EAA985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		482486102A32A7AB00EAA985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		482486132A32A7AB00EAA985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		487544872A369CAE00E4D7E4 /* TestFlightServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlightServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		487544882A369CAE00E4D7E4 /* TestFlightServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFlightServiceExtension.swift; sourceTree = "<group>"; };
 		489A31872A33E6300090B0E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		489A31882A33E6300090B0E5 /* TestFlightServiceExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TestFlightServiceExtension.entitlements; sourceTree = "<group>"; };
 		489FB36E2A34135F00347257 /* AppStoreDaemon.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = AppStoreDaemon.tbd; sourceTree = "<group>"; };
-		48AD472A2A33EE6A00F73716 /* TestFlightServiceExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFlightServiceExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				489A31872A33E6300090B0E5 /* Info.plist */,
-				489A31882A33E6300090B0E5 /* TestFlightServiceExtension.entitlements */,
-				48AD472A2A33EE6A00F73716 /* TestFlightServiceExtension.m */,
+				487544882A369CAE00E4D7E4 /* TestFlightServiceExtension.swift */,
+				487544872A369CAE00E4D7E4 /* TestFlightServiceExtension-Bridging-Header.h */,
 			);
 			path = TestFlightServiceExtension;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48AD472B2A33EE6A00F73716 /* TestFlightServiceExtension.m in Sources */,
+				487544892A369CAE00E4D7E4 /* TestFlightServiceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +257,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = TestFlightServiceExtension/TestFlightServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C4492JYJR3;
@@ -280,6 +279,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestFlightServiceExtension/TestFlightServiceExtension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,7 +290,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = TestFlightServiceExtension/TestFlightServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C4492JYJR3;
@@ -313,6 +312,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestFlightServiceExtension/TestFlightServiceExtension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -435,6 +435,7 @@
 		482486182A32A7AB00EAA985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,6 +470,7 @@
 		482486192A32A7AB00EAA985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
